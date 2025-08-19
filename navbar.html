@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      background: #62d291;
+      border-bottom: 1px solid #000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      padding: 5px 15px;
+      border-right: 1px solid #000;
+    }
+    .logo img {
+      height: 50px;
+      margin-right: 8px;
+    }
+    .logo span {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .menu {
+      display: flex;
+      flex: 1;
+    }
+    .menu-item {
+      position: relative;
+      padding: 20px;
+      border-right: 1px solid #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .menu-item:hover {
+      background: #58be84;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #f8d7da;
+      border: 1px solid #000;
+      min-width: 150px;
+      z-index: 10;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 8px 15px;
+      text-decoration: none;
+      color: black;
+      border-bottom: 1px solid #ddd;
+    }
+    .dropdown-content a:hover {
+      background: #f4bebe;
+    }
+    .menu-item:hover .dropdown-content {
+      display: block;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      border-left: 1px solid #000;
+    }
+    .user span {
+      margin-right: 8px;
+    }
+    .user-icon {
+      width: 28px;
+      height: 28px;
+      border: 2px solid black;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <span>Art glass <br> And Aluminum <br> Supplies</span>
+    </div>
+
+    <div class="menu">
+      <div class="menu-item">
+        INVENTORY
+        <div class="dropdown-content">
+          <a href="#">MATERIALS</a>
+          <a href="#">TOOLS</a>
+          <a href="#">CUTTING LIST</a>
+          <a href="#">PURCHASING</a>
+        </div>
+      </div>
+    <div class="menu">
+      <div class="menu-item">
+        PROJECT
+      <div class="dropdown-content">
+        <a href="#">MATERIALS</a>
+          <a href="#">TOOLS</a>
+          <a href="#">CUTTING LIST</a>
+          <a href="#">PURCHASING</a>
+        </div>
+    </div>
+      <div class="menu-item">APPROVALS</div>
+      <div class="menu-item">HISTORY</div>
+    </div>
+
+
+    <div class="user">
+      <span>Username</span>
+      <div class="user-icon"></div>
+    </div>
+  </div>
+
+</body>
+</html>
